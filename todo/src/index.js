@@ -24,7 +24,8 @@ const onClickAdd = () =>{
   deleteButton.innerText = "削除";
   deleteButton.classList.add('rounded', 'border-none', 'px-[2vw]', 'bg-gray-100', 'hover:bg-[#79a8a9]', 'hover:text-[#fff]', 'hover:cursor-pointer');
   deleteButton.addEventListener("click", () => {
-    alert("削除");
+    const deleteTarget = deleteButton.closest("li");
+    document.getElementById("imcomplete-list").removeChild(deleteTarget);
   })
 
   div.appendChild(p);
