@@ -6,24 +6,34 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
-  <body>
-    <div>
-        <input placeholder="TODOを入力">
-        <button>追加</button>
+  <body class="flex flex-col items-center">
+    <div class="bg-[#c6e5d9] w-[50vw] h-[5vh] p-[1vh] m-[1vh] rounded">
+        <input placeholder="TODOを入力" class="rounded border-none">
+        <button class="rounded border-none px-[2vw] bg-gray-100 hover:bg-[#79a8a9] hover:text-[#fff] hover:corsor-pointer">追加</button>
     </div>
-    <div>
-        <p>未完了のTODO</p>
+    <div class="border-2 border-solid border-[#aacfd0] w-[50vw] p-[1vh] m-[1vh] rounded min-h-[25vh]">
+        <p class="text-center mt-0 font-bold text-[#666]">未完了のTODO</p>
         <ul>
-            <div>
-                <li>
+            <li>
+                <div class="flex items-center">
                     <p>todoです</p>
-                    <button>完了</button>
-                    <button>削除</button>
-                </li>
-            </div>
+                    <button class="rounded border-none px-[2vw] mx-[1vw] md-[1vh] bg-gray-100 hover:bg-[#79a8a9] hover:text-[#fff] hover:corsor-pointer">完了</button>
+                    <button class="rounded border-none px-[2vw] bg-gray-100 hover:bg-[#79a8a9] hover:text-[#fff] hover:corsor-pointer">削除</button>
+                </div>
+            </li>
         </ul>
     </div>
-    <div></div>
+    <div class="border-2 border-solid border-[#aacfd0] w-[50vw] p-[1vh] m-[1vh] rounded min-h-[25vh] bg-[#c9dede]">
+        <p class="text-center mt-0 font-bold text-[#666]">完了のTODO</p>
+        <ul>
+            <li>
+                <div class="flex">
+                    <p>todoです</p>
+                    <button class="rounded border-none px-[2vw] bg-gray-100 hover:bg-[#79a8a9] hover:text-[#fff] hover:corsor-pointer mx-[1vw] md-[1vh]">戻す</button>
+                </div>
+            </li>
+        </ul>
+    </div>
     <script src="./src/index.js"></script>
   </body>
 </html>
