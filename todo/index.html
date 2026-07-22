@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODO(JS)</title>
+    <meta charset="UTF-8" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="flex flex-col items-center">
+    <div class="bg-[#c6e5d9] w-[50vw] h-[5vh] p-[1vh] m-[1vh] rounded input-area">
+        <input placeholder="TODOを入力" 
+                class="rounded border-none" 
+                id="add-text">
+        <button class="rounded border-none px-[2vw] bg-gray-100 hover:bg-[#79a8a9] hover:text-[#fff] hover:corsor-pointer"
+                id="add-button">
+                追加
+        </button>
+    </div>
+    <div class="border-2 border-solid border-[#aacfd0] w-[50vw] p-[1vh] m-[1vh] rounded min-h-[25vh] incomplete-area">
+        <p class="text-center mt-0 font-bold text-[#666] title">未完了のTODO</p>
+        <ul id="incomplete-list">
+        </ul>
+    </div>
+    <div class="border-2 border-solid border-[#aacfd0] w-[50vw] p-[1vh] m-[1vh] rounded min-h-[25vh] bg-[#c9dede]">
+        <p class="text-center mt-0 font-bold text-[#666]">完了のTODO</p>
+        <ul id="complete-list">
+        </ul>
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
